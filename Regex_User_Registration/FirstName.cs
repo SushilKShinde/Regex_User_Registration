@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 namespace Regex_User_Registration
 {
-    public class FirstName
+    public class Validation
     {
         public static void ValidateFirstName()
         {

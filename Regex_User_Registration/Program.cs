@@ -17,13 +17,16 @@ namespace Regex_User_Registration
             //$ >>>>>> end of pattern
             Console.WriteLine("Welcome To the validation of the User registration information by regex ");
             Console.WriteLine("Choose the correct option from the belo");
-            Console.WriteLine("1.Validate first name");
+            Console.WriteLine("1.Validate first name\n2.Validate Last Name");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
             {
                 case 1:
-                    FirstName.ValidateFirstName();
+                    Validation.ValidateFirstName();
+                    break;
+                case 2:
+                    LastName.ValidateLastName();
                     break;
                 default:
                     Console.WriteLine("Please enter valid input");
