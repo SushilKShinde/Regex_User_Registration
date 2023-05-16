@@ -17,7 +17,7 @@ namespace Regex_User_Registration
             //$ >>>>>> end of pattern
             Console.WriteLine("Welcome To the validation of the User registration information by regex ");
             Console.WriteLine("Choose the correct option from the belo");
-            Console.WriteLine("1.Validate first name\n2.Validate Last Name\n3.Validate Email id");
+            Console.WriteLine("1.Validate first name\n2.Validate Last Name\n3.Validate Email id\n4.Validate phone number");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -30,6 +30,9 @@ namespace Regex_User_Registration
                     break;
                 case 3:
                     EmailId.ValidateEmailId();
+                    break;
+                case 4:
+                    PhoneNumber.ValidatePhoneNumber();
                     break;
                 default:
                     Console.WriteLine("Please enter valid input");
